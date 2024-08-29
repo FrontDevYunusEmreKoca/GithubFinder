@@ -18,6 +18,7 @@ const Search = ({searchUsers}) => {
             <div className="input-group mb-3">
                 <input onChange={onChange} type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" id='inputValue'/>
                 <button className='btn btn-primary btn-sm '>Search</button>
+              
             </div>
     </div>
 </form>

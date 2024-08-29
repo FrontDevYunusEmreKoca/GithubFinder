@@ -44,3 +44,12 @@
   height: 100vh; /* Ekranın tamamını kaplar */
   width: 100vw; /* Ekranın tamamını kaplar */
 }
+/* primary renk mavi (#007bff) */
+.alert-primary {
+  background-color: #007bff; /* Primary renk arka planı */
+  color: #ffffff; /* Yazı rengi beyaz */
+  border: 1px solid #007bff; /* Kenar rengi */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}

@@ -1,0 +1,55 @@
+/* Alert stilizasyonu */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336; /* Kırmızı arka plan rengi */
+    color: white; /* Yazı rengi beyaz */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-size: 16px;
+    max-width: 90%;
+    width: auto;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .alert-message {
+    flex: 1;
+  }
+  
+  .alert-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .alert-close:hover {
+    color: #ffebee; /* Açık kırmızı */
+    transform: scale(1.1); /* Küçük bir büyütme efekti */
+  }
+  
+  .alert-success {
+    background-color: #4caf50; /* Yeşil arka plan rengi */
+  }
+  
+  .alert-info {
+    background-color: #2196f3; /* Mavi arka plan rengi */
+  }
+  
+  .alert-warning {
+    background-color: #ff9800; /* Turuncu arka plan rengi */
+  }
+  
+  .alert-danger {
+    background-color: #f44336; /* Kırmızı arka plan rengi */
+  }
+  
