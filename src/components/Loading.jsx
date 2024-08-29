@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import spinner from '../images/Spinner@1x-1.0s-200px-200px.gif'; // Spinner görselini import ettik
 
 const Loading = () => {
+ 
   return (
     <div className='loading-container'>
-      <img src={spinner} alt="Loading..." />
+      <img  className='color'  src={spinner} alt="Loading..." />
     </div>
   );
 };

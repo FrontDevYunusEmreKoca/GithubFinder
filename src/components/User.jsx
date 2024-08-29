@@ -4,7 +4,7 @@ const User = ({ user }) => {
   return (
     
     <div>
-      <div className="card m-3 " >
+      <div className="card my-3 " >
         <img src={user.avatar_url} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{user.login}</h5>
