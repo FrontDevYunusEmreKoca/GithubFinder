@@ -1,0 +1,108 @@
+.user-details {
+    margin-top: 20px; /* Üstten boşluk bırakır */
+}
+
+.user-avatar {
+    border-radius: 50%; /* Avatarı yuvarlak yapar */
+    width: 150px; /* Avatarın genişliği */
+    height: 150px; /* Avatarın yüksekliği */
+    border: 3px solid #007bff; /* Avatarın etrafında mavi bir sınır */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+.user-name {
+    font-size: 28px; /* Kullanıcı adının yazı boyutu */
+    margin: 10px 0; /* Kullanıcı adı ile diğer elemanlar arasında boşluk bırakır */
+}
+
+.user-stats {
+    display: flex; /* Stat bilgilerini yan yana düzenler */
+    justify-content: start; /* Stat bilgilerini sola hizalar */
+    margin: 20px 0; /* Stat bilgilerinin üst ve altına boşluk bırakır */
+}
+
+.stat-item {
+    margin-right: 15px; /* Stat bilgileri arasına boşluk bırakır */
+    font-size: 18px; /* Stat bilgisi yazı boyutu */
+}
+
+.user-bio, .user-location, .user-email, .user-created, .user-updated {
+    margin: 10px 0; /* Bilgilerin üst ve altına boşluk bırakır */
+}
+
+.repos {
+    margin-top: 20px; /* Repos bölümü ile diğer elemanlar arasında boşluk bırakır */
+}
+
+.repo-list {
+    display: flex; /* Repo kartlarını yan yana düzenler */
+    flex-wrap: wrap; /* Kartların satır sonuna sarmasına izin verir */
+    gap: 15px; /* Kartlar arasına boşluk bırakır */
+}
+
+.repo-card {
+    background-color: #f8f9fa; /* Kart arka plan rengi */
+    border: 1px solid #dee2e6; /* Kart etrafında hafif bir sınır */
+    border-radius: 5px; /* Kart köşelerini yuvarlatır */
+    padding: 15px; /* Kart içindeki boşluk */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    flex: 1 1 calc(33.33% - 15px); /* Kart genişliği ve esneklik */
+    transition: transform 0.2s, box-shadow 0.2s; /* Hover efekti geçişi */
+    position: relative; /* Kart içeriğinin konumunu kontrol eder */
+}
+
+.repo-card:hover {
+    transform: translateY(-5px); /* Kartı yukarıya hareket ettirir */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover efekti için daha belirgin gölge */
+}
+
+.repo-content {
+    display: flex; /* Repo içeriğini dikey olarak hizalar */
+    flex-direction: column; /* İçerikleri dikey olarak sıralar */
+    justify-content: space-between; /* İçerikleri arasında eşit boşluk bırakır */
+    height: 100%; /* Kart yüksekliğini doldurur */
+}
+
+.repo-name {
+    font-size: 18px; /* Repo adı yazı boyutu */
+    margin-bottom: 10px; /* Repo adı ile açıklama arasında boşluk bırakır */
+}
+
+.repo-description {
+    font-size: 14px; /* Repo açıklaması yazı boyutu */
+    color: #6c757d; /* Açıklama yazı rengi */
+    margin-bottom: 10px; /* Açıklama ile buton arasında boşluk bırakır */
+}
+
+.btn {
+    display: inline-block; /* Butonları satır içinde yerleştirir */
+    padding: 10px 20px; /* Buton içindeki boşluk */
+    font-size: 16px; /* Buton yazı boyutu */
+    border: none; /* Buton kenarlığını kaldırır */
+    cursor: pointer; /* Fare işaretçisini pointer yapar */
+    text-align: center; /* Buton içindeki metni ortalar */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Birincil butonun arka plan rengi */
+    color: white; /* Birincil butonun metin rengi */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Birincil butonun hover durumundaki arka plan rengi */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* İkincil butonun arka plan rengi */
+    color: white; /* İkincil butonun metin rengi */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* İkincil butonun hover durumundaki arka plan rengi */
+}
+
+.error-message {
+    color: red; /* Hata mesajının rengi */
+    font-size: 18px; /* Hata mesajının yazı boyutu */
+    text-align: center; /* Hata mesajını ortalar */
+}

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import User from './User';
 import Loading from './Loading'; // Loading bileşenini import ettik
 
-const Users = ({users}) => {
+const Users = ({users,loading}) => {
   // const [users, setUsers] = useState([]);
   // const [loading, setLoading] = useState(true); // Başlangıçta loading true
 
@@ -25,13 +25,17 @@ const Users = ({users}) => {
   // if (loading) {
   //   return <Loading />; // Eğer loading true ise Loading bileşenini göster
   // }
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
+    
     <div className="container">
       <div className="row">
         {users.map(user => (
           <div key={user.id} className="col-md-4 col-lg-3 col-sm-6">
-            <User user={user} />
+            <User user={user} Loading={Loading}/>
           </div>
         ))}
       </div>
